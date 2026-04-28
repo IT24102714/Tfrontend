@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api/items",
+  baseURL: "tbackend-production-0a45.up.railway.app",
 });
 
 export const getItems      = ()        => API.get("/").then(r => r.data);
